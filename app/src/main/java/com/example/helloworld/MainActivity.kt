@@ -26,35 +26,31 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         // анонимный класс
         textViewMain.setOnClickListener() {
-           val messageTemp = textViewMain.getText().toString()
-           textViewMain.setText(textViewMain2.getText().toString())
-           textViewMain2.setText(messageTemp)
-
-           val colorTemp = textViewMain.getBackground()
-           textViewMain.setBackground(textViewMain2.getBackground())
-           textViewMain2.setBackground(colorTemp)
+            swapText()
+            swapBackgroundColor()
         }
-
-
-
     }
 
     override fun onClick(v: View?) {
-        val messageTemp = textViewMain.getText().toString()
-        textView.setText(textViewMain2.getText().toString())
-        textView2.setText(messageTemp)
-
-        val colorTemp = textViewMain.getBackground()
-        textView.setBackground(textViewMain2.getBackground())
-        textView2.setBackground(colorTemp)
+        swapText()
+        swapBackgroundColor()
     }
 
-        // layout xml
+    // layout xml
     fun clickResponse(view: View) {
+        swapText()
+        swapBackgroundColor()
+    }
+
+    // Повторявшийся кусок кода с разменом текстами и цветом фона
+    fun swapText() {
         val messageTemp = textViewMain.getText().toString()
         textViewMain.setText(textViewMain2.getText().toString())
         textViewMain2.setText(messageTemp)
+    }
 
+    // Записал их как две разные функции, а не одну, т.к. таким образом можно будет в будущем контролировать, что менять ты хочешь, а что - нет.
+    fun swapBackgroundColor() {
         val colorTemp = textViewMain.getBackground()
         textViewMain.setBackground(textViewMain2.getBackground())
         textViewMain2.setBackground(colorTemp)
