@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,60 +9,27 @@ import android.widget.Button
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
-
-    private lateinit var textView:TextView
-    private lateinit var textView2:TextView
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<Button>(R.id.buttonMain)
-        textView = findViewById<TextView>(R.id.textViewMain)
-        textView2 = findViewById<TextView>(R.id.textViewMain2)
+        buttonTask1.setOnClickListener() {
+            val intent1 = Intent(this, Task1Activity::class.java)
+            startActivityForResult(intent1, 12)
+        }
 
-        // сделать имплемент OnClickListener на текущую активити
-        button.setOnClickListener(this)
 
-        // анонимный класс
-        textViewMain.setOnClickListener() {
-            swap()
+        buttonTask2.setOnClickListener() {
+            val intent2 = Intent(this, Task2Activity::class.java)
+            startActivityForResult(intent2, 12)
         }
     }
-
-    override fun onClick(v: View?) {
-        swap()
-    }
-
-    // layout xml
-    fun clickResponse(view: View) {
-        swap()
-    }
-    // Повторявшийся кусок кода с разменом текстами и цветом фона
-    fun swap() {
-        val messageTemp = textViewMain.getText().toString()
-        textViewMain.setText(textViewMain2.getText().toString())
-        textViewMain2.setText(messageTemp)
-
-        val colorTemp = textViewMain.getBackground()
-        textViewMain.setBackground(textViewMain2.getBackground())
-        textViewMain2.setBackground(colorTemp)
-    }
 }
-    // Оставлю эти две под комментарием
-    /*fun swapText() {
-        val messageTemp = textViewMain.getText().toString()
-        textViewMain.setText(textViewMain2.getText().toString())
-        textViewMain2.setText(messageTemp)
-    }
 
 
-    fun swapBackgroundColor() {
-        val colorTemp = textViewMain.getBackground()
-        textViewMain.setBackground(textViewMain2.getBackground())
-        textViewMain2.setBackground(colorTemp)
-    }*/
+
 
 
 

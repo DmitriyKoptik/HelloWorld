@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HelloAndroidWorld</string>
+    <string name="app_name">HelloWorld</string>
     <string name="message1">Этот текст изначально был наверху</string>
     <string name="message2">Этот текст изначально был внизу</string>
 </resources>
