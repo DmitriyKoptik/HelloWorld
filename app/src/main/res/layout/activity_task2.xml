@@ -10,14 +10,257 @@
         android:id="@+id/buttonBack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="536dp"
         android:background="@color/colorPrimary"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/backMessage"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/flag1"
+                android:layout_width="match_parent"
+                android:layout_height="120pt"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/flag1color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    android:background="@color/flagOfAustria1"/>
+
+                <View
+                    android:id="@+id/flag1color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    android:background="@color/flagOfAustria2"/>
+
+                <View
+                    android:id="@+id/flag1color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    android:background="@color/flagOfAustria1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/flag2"
+                android:layout_width="match_parent"
+                android:layout_height="120pt"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/flag2color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:background="@color/flagOfPoland1"/>
+
+                <View
+                    android:id="@+id/flag2color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:background="@color/flagOfPoland2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/flag3"
+                android:layout_width="match_parent"
+                android:layout_height="120pt"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/flag3color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/flagOfItaly1" />
+
+                <View
+                    android:id="@+id/flag3color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/flagOfItaly2"/>
+
+                <View
+                    android:id="@+id/flag3color3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/flagOfItaly3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/flag4"
+                android:layout_width="match_parent"
+                android:layout_height="120pt"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/flag4color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:background="@color/flagOfColombia1"/>
+
+                <View
+                    android:id="@+id/flag4color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30pt"
+                    android:background="@color/flagOfColombia2"/>
+
+                <View
+                    android:id="@+id/flag4color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30pt"
+                    android:background="@color/flagOfColombia3"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/flag5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/flag5color1"
+                    android:layout_width="60pt"
+                    android:layout_height="120pt"
+                    android:background="@color/flagOfMadagascar1"
+                    />
+
+                <View
+                    android:id="@+id/flag5color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:background="@color/flagOfMadagascar2"
+                    android:layout_toEndOf="@+id/flag5color1"/>
+
+                <View
+                    android:id="@+id/flag5color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60pt"
+                    android:background="@color/flagOfMadagascar3"
+                    android:layout_toEndOf="@+id/flag5color1"
+                    android:layout_below="@+id/flag5color2"/>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/flag6"
+                android:layout_width="match_parent"
+                android:layout_height="120pt"
+                android:layout_gravity="clip_vertical">
+
+                <View
+                    android:id="@+id/flag6color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:background="@color/flagOfThailand1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/flag6color2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:background="@color/flagOfThailand2"
+                    app:layout_constraintTop_toBottomOf="@+id/flag6color1" />
+
+                <View
+                    android:id="@+id/flag6color3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40pt"
+                    android:background="@color/flagOfThailand3"
+                    app:layout_constraintTop_toBottomOf="@+id/flag6color2"/>
+
+                <View
+                    android:id="@+id/flag6color4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:background="@color/flagOfThailand2"
+                    app:layout_constraintTop_toBottomOf="@+id/flag6color3"/>
+
+                <View
+                    android:id="@+id/flag6color5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20pt"
+                    android:background="@color/flagOfThailand1"
+                    app:layout_constraintTop_toBottomOf="@+id/flag6color4"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/flag7"
+                android:layout_width="match_parent"
+                android:layout_height="120pt"
+                android:layout_gravity="clip_vertical">
+
+                <View
+                    android:id="@+id/flag7background"
+                    android:layout_width="match_parent"
+                    android:layout_height="120pt"
+                    android:layout_weight="1"
+                    android:background="@color/flagOfDenmark1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <View
+                    android:id="@+id/flag7color1"
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:background="@color/flagOfDenmark2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/flag7color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50pt"
+                    android:layout_marginStart="70pt"
+                    android:layout_weight="3"
+                    android:background="@color/flagOfDenmark2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/flag7color3"
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:layout_marginTop="84dp"
+                    android:layout_weight="1"
+                    android:background="@color/flagOfDenmark2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <View
+                    android:id="@+id/flag7color4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50pt"
+                    android:layout_marginStart="70pt"
+                    android:layout_weight="3"
+                    android:background="@color/flagOfDenmark2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

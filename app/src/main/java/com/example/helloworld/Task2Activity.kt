@@ -11,8 +11,7 @@ class Task2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_task2)
 
         buttonBack2.setOnClickListener() {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivityForResult(intent, 12)
+            onBackPressed()
         }
     }
 }

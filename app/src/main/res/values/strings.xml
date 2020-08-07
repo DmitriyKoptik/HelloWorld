@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="taskMessage1">Task1</string>
+    <string name="taskMessage2">Task2</string>
+    <string name="taskMessage3">Task3</string>
+    <string name="taskMessage4">Task4</string>
     <string name="message1">Этот текст изначально был наверху</string>
     <string name="message2">Этот текст изначально был внизу</string>
+    <string name="backMessage">Back</string>
+    <string name="swapMessage">Swap</string>
 </resources>

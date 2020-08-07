@@ -17,8 +17,7 @@ class Task1Activity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_task1)
 
         buttonBack.setOnClickListener() {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivityForResult(intent, 12)
+            onBackPressed()
         }
 
         val button = findViewById<Button>(R.id.buttonMain)

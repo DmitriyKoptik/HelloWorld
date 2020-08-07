@@ -5,4 +5,22 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorBox1">#F07E65</color>
     <color name="colorBox2">#34D2E7</color>
+    <color name="flagOfAustria1">#ed2939</color>
+    <color name="flagOfAustria2">#ffffff</color>
+    <color name="flagOfPoland1">#ffffff</color>
+    <color name="flagOfPoland2">#dc143c</color>
+    <color name="flagOfItaly1">#009246</color>
+    <color name="flagOfItaly2">#ffffff</color>
+    <color name="flagOfItaly3">#ce2b37</color>
+    <color name="flagOfColombia1">#fcd116</color>
+    <color name="flagOfColombia2">#003893</color>
+    <color name="flagOfColombia3">#ce1126</color>
+    <color name="flagOfMadagascar1">#ffffff</color>
+    <color name="flagOfMadagascar2">#007e3a</color>
+    <color name="flagOfMadagascar3">#fc3d32</color>
+    <color name="flagOfThailand1">#a51931</color>
+    <color name="flagOfThailand2">#f4f5f8</color>
+    <color name="flagOfThailand3">#2d2a4a</color>
+    <color name="flagOfDenmark1">#ffffff</color>
+    <color name="flagOfDenmark2">#c60c30</color>
 </resources>
