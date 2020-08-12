@@ -1,6 +1,5 @@
 package com.example.helloworld
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -52,8 +51,8 @@ class Task1Activity : AppCompatActivity(), View.OnClickListener {
         textViewMain2.setBackground(colorTemp)
     }
 }
-// Оставлю эти две под комментарием
-/*fun swapText() {
+/* Оставлю эти две под комментарием
+fun swapText() {
     val messageTemp = textViewMain.getText().toString()
     textViewMain.setText(textViewMain2.getText().toString())
     textViewMain2.setText(messageTemp)

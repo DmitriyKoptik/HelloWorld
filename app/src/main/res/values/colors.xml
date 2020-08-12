@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#01A695</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#ed2939</color>
     <color name="colorBox1">#F07E65</color>
     <color name="colorBox2">#34D2E7</color>
     <color name="flagOfAustria1">#ed2939</color>

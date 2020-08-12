@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Task2Activity">
+    tools:context="com.example.helloworld.Task2Activity">
 
     <Button
-        android:id="@+id/buttonBack2"
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
@@ -19,12 +19,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:id="@+id/flag1"
@@ -56,7 +58,8 @@
                 android:id="@+id/flag2"
                 android:layout_width="match_parent"
                 android:layout_height="120pt"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop ="10pt">
 
                 <View
                     android:id="@+id/flag2color1"
@@ -75,7 +78,8 @@
                 android:id="@+id/flag3"
                 android:layout_width="match_parent"
                 android:layout_height="120pt"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop ="10pt">
 
                 <View
                     android:id="@+id/flag3color1"
@@ -104,7 +108,8 @@
                 android:id="@+id/flag4"
                 android:layout_width="match_parent"
                 android:layout_height="120pt"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop ="10pt">
 
                 <View
                     android:id="@+id/flag4color1"
@@ -129,7 +134,8 @@
             <RelativeLayout
                 android:id="@+id/flag5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop ="10pt">
 
                 <View
                     android:id="@+id/flag5color1"
@@ -159,7 +165,8 @@
                 android:id="@+id/flag6"
                 android:layout_width="match_parent"
                 android:layout_height="120pt"
-                android:layout_gravity="clip_vertical">
+                android:layout_gravity="clip_vertical"
+                android:layout_marginTop ="10pt">
 
                 <View
                     android:id="@+id/flag6color1"
@@ -202,7 +209,8 @@
                 android:id="@+id/flag7"
                 android:layout_width="match_parent"
                 android:layout_height="120pt"
-                android:layout_gravity="clip_vertical">
+                android:layout_gravity="clip_vertical"
+                android:layout_marginTop ="10pt">
 
                 <View
                     android:id="@+id/flag7background"
@@ -253,9 +261,6 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
-
-
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

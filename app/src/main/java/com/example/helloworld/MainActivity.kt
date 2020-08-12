@@ -3,10 +3,6 @@ package com.example.helloworld
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +20,12 @@ class MainActivity : AppCompatActivity() {
         buttonTask2.setOnClickListener() {
             val intent2 = Intent(this, Task2Activity::class.java)
             startActivityForResult(intent2, 12)
+        }
+
+
+        buttonTask3.setOnClickListener() {
+            val intent3 = Intent(this, Task3Activity::class.java)
+            startActivityForResult(intent3, 12)
         }
     }
 }

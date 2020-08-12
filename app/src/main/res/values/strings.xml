@@ -8,4 +8,8 @@
     <string name="message2">Этот текст изначально был внизу</string>
     <string name="backMessage">Back</string>
     <string name="swapMessage">Swap</string>
+    <string name="task3ButtonMessage">Покажи, что за дверью!</string>
+    <string name="imgMessage">Дверка. Красная.</string>
+    <string name="imgPathStandard">https://img.pngio.com/red-door-png-5-png-image-red-door-png-1722_3568.png</string>
+    <string name="advice">URL of a picture</string>
 </resources>
