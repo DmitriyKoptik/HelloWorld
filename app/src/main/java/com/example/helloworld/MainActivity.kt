@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             val intent3 = Intent(this, Task3Activity::class.java)
             startActivityForResult(intent3, 12)
         }
+
+        buttonTask4.setOnClickListener() {
+            val intent4 = Intent(this, Task4Activity::class.java)
+            startActivityForResult(intent4, 12)
+        }
     }
 }
 

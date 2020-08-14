@@ -12,4 +12,9 @@
     <string name="imgMessage">Дверка. Красная.</string>
     <string name="imgPathStandard">https://img.pngio.com/red-door-png-5-png-image-red-door-png-1722_3568.png</string>
     <string name="advice">URL of a picture</string>
+    <string name="meme1">Проходи, не задерживайся!</string>
+    <string name="meme2">Иди своей дорогой, сталкер.</string>
+    <string name="meme3">Фильмография Тарковского</string>
+    <string name="title">Титл</string>
+    <string name="description">Дескриптион</string>
 </resources>

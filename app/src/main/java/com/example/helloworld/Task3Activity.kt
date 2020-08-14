@@ -15,19 +15,19 @@ class Task3Activity : AppCompatActivity() {
             .with(this)
             .load(R.drawable.door)
             .error(R.drawable.error)
-            .into(imageView);
+            .into(imageView)
 
-        buttonBack.setOnClickListener() {
+        buttonBack.setOnClickListener {
             onBackPressed()
         }
 
-        button.setOnClickListener() {
+        button.setOnClickListener {
             val editText = editText.text.toString()
             Glide
                 .with(this)
                 .load(editText)
                 .error(R.drawable.error)
-                .into(imageView);
+                .into(imageView)
         }
     }
 }
