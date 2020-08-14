@@ -4,17 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import kotlinx.android.synthetic.main.fragment_3.*
 
 data class Movie(val title: String, val year: Int)
 
 class Fragment3 : Fragment() {
 
-    private val mNicolasCageMovies = listOf(
+    private val mTarkovskyMovies = listOf(
         Movie("Убийцы", 1956),
         Movie("Сегодня увольнения не будет…", 1958),
         Movie("Каток и скрипка", 1960),
@@ -55,7 +53,7 @@ class Fragment3 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView.apply {
             layoutManager = LinearLayoutManager(activity)
-            adapter = Task4Activity.ListAdapter(mNicolasCageMovies)
+            adapter = Task4Activity.ListAdapter(mTarkovskyMovies)
         }
 
     }
