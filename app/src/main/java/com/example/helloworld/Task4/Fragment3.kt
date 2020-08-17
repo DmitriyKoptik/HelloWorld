@@ -53,7 +53,7 @@ class Fragment3 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView.apply {
             layoutManager = LinearLayoutManager(activity)
-            adapter = Task4Activity.ListAdapter(mTarkovskyMovies)
+            adapter = ListAdapter(mTarkovskyMovies)
         }
 
     }
