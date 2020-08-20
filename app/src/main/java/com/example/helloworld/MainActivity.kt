@@ -28,9 +28,16 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent3, 12)
         }
 
+
         buttonTask4.setOnClickListener() {
             val intent4 = Intent(this, Task4Activity::class.java)
             startActivityForResult(intent4, 12)
+        }
+
+
+        buttonTask5.setOnClickListener() {
+            val intent5 = Intent(this, Task5Activity::class.java)
+            startActivityForResult(intent5, 12)
         }
     }
 }

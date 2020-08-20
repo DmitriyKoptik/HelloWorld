@@ -4,6 +4,7 @@
     <string name="taskMessage2">Task2</string>
     <string name="taskMessage3">Task3</string>
     <string name="taskMessage4">Task4</string>
+    <string name="taskMessage5">Task5</string>
     <string name="message1">Этот текст изначально был наверху</string>
     <string name="message2">Этот текст изначально был внизу</string>
     <string name="backMessage">Back</string>
@@ -17,4 +18,24 @@
     <string name="meme3">Фильмография Тарковского</string>
     <string name="title">Титл</string>
     <string name="description">Дескриптион</string>
+    <string name="title_activity_task5">Task5Activity</string>
+    <string name="task5_game_choice0">Во что сегодня играем?</string>
+    <string name="task5_game_choice1">Шахматы</string>
+    <string name="task5_game_choice2">Шашки</string>
+    <string name="task5_game_choice3">Нарды</string>
+    <string name="task5_game_choice4">Шоги</string>
+    <string name="task5_game_choice5">Го</string>
+    <string name="nav1_message">Мы играем в шахматы</string>
+    <string name="nav2_message">Мы играем в шашки</string>
+    <string name="nav3_message">Мы играем в нарды</string>
+    <string name="nav4_message">Мы играем в шоги</string>
+    <string name="nav5_message">Мы играем в го</string>
+    <string name="game_end">Мы доиграли!</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
