@@ -8,47 +8,33 @@
         android:id="@+id/nav0"
         android:name="com.example.helloworld.Nav0"
         android:label="fragment_nav0"
-        tools:layout="@layout/fragment_nav0" >
-        <action
-            android:id="@+id/action_nav0_to_nav1"
-            app:destination="@id/nav1" />
-        <action
-            android:id="@+id/action_nav0_to_nav5"
-            app:destination="@id/nav5" />
-        <action
-            android:id="@+id/action_nav0_to_nav4"
-            app:destination="@id/nav4" />
-        <action
-            android:id="@+id/action_nav0_to_nav3"
-            app:destination="@id/nav3" />
-        <action
-            android:id="@+id/action_nav0_to_nav2"
-            app:destination="@id/nav2" />
-    </fragment>
+        tools:layout="@layout/fragment_nav0" />
     <fragment
-        android:id="@+id/nav1"
+        android:id="@+id/chess"
         android:name="com.example.helloworld.Nav1"
         android:label="fragment_nav1"
-        tools:layout="@layout/fragment_nav1" />
+        tools:layout="@layout/fragment_nav1" >
+        <action
+            android:id="@+id/back_action"
+            app:destination="@id/nav0" />
+    </fragment>
     <fragment
-        android:id="@+id/nav2"
-        android:name="com.example.helloworld.Nav2"
-        android:label="fragment_nav2"
-        tools:layout="@layout/fragment_nav2" />
-    <fragment
-        android:id="@+id/nav3"
+        android:id="@+id/nards"
         android:name="com.example.helloworld.Nav3"
         android:label="fragment_nav3"
-        tools:layout="@layout/fragment_nav3" />
+        tools:layout="@layout/fragment_nav3" >
+        <action
+            android:id="@+id/back_action"
+            app:destination="@id/nav0" />
+    </fragment>
     <fragment
-        android:id="@+id/nav4"
+        android:id="@+id/shogi"
         android:name="com.example.helloworld.Nav4"
         android:label="fragment_nav4"
-        tools:layout="@layout/fragment_nav4" />
-    <fragment
-        android:id="@+id/nav5"
-        android:name="com.example.helloworld.Nav5"
-        android:label="fragment_nav5"
-        tools:layout="@layout/fragment_nav5" />
+        tools:layout="@layout/fragment_nav4" >
+        <action
+            android:id="@+id/back_action"
+            app:destination="@id/nav0" />
+    </fragment>
 
 </navigation>

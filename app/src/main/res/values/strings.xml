@@ -26,16 +26,7 @@
     <string name="task5_game_choice4">Шоги</string>
     <string name="task5_game_choice5">Го</string>
     <string name="nav1_message">Мы играем в шахматы</string>
-    <string name="nav2_message">Мы играем в шашки</string>
     <string name="nav3_message">Мы играем в нарды</string>
     <string name="nav4_message">Мы играем в шоги</string>
-    <string name="nav5_message">Мы играем в го</string>
     <string name="game_end">Мы доиграли!</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
-    <string name="hello_world">Hello Square World!</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
