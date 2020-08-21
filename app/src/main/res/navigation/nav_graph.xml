@@ -3,38 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/nav0">
+    app:startDestination="@id/library">
     <fragment
-        android:id="@+id/nav0"
-        android:name="com.example.helloworld.Nav0"
+        android:id="@+id/library"
+        android:name="com.example.helloworld.GameLibrary"
         android:label="fragment_nav0"
-        tools:layout="@layout/fragment_nav0" />
+        tools:layout="@layout/fragment_game_library" >
+        <action
+            android:id="@+id/goto_game_details"
+            app:destination="@id/gameModeDestination" />
+    </fragment>
     <fragment
-        android:id="@+id/chess"
-        android:name="com.example.helloworld.Nav1"
+        android:id="@+id/gameModeDestination"
+        android:name="com.example.helloworld.GameMode"
         android:label="fragment_nav1"
-        tools:layout="@layout/fragment_nav1" >
+        tools:layout="@layout/fragment_game_mode" >
         <action
-            android:id="@+id/back_action"
-            app:destination="@id/nav0" />
+            android:id="@+id/goto_home_action"
+            app:destination="@id/library" />
+        <argument android:name="GameDetailsMode"
+            app:argType="com.example.helloworld.GameDetailsMode" />
     </fragment>
     <fragment
-        android:id="@+id/nards"
-        android:name="com.example.helloworld.Nav3"
+        android:id="@+id/settings"
+        android:name="com.example.helloworld.Settings"
         android:label="fragment_nav3"
-        tools:layout="@layout/fragment_nav3" >
+        tools:layout="@layout/fragment_settings" >
         <action
-            android:id="@+id/back_action"
-            app:destination="@id/nav0" />
+            android:id="@+id/goto_home_action"
+            app:destination="@id/library" />
     </fragment>
     <fragment
-        android:id="@+id/shogi"
-        android:name="com.example.helloworld.Nav4"
+        android:id="@+id/login"
+        android:name="com.example.helloworld.Login"
         android:label="fragment_nav4"
-        tools:layout="@layout/fragment_nav4" >
-        <action
-            android:id="@+id/back_action"
-            app:destination="@id/nav0" />
-    </fragment>
+        tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/home"
+        android:name="com.example.helloworld.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 
 </navigation>

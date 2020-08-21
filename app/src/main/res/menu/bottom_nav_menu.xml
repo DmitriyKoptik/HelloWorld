@@ -3,18 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/chess"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/task5_game_choice1" />
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home" />
 
     <item
-        android:id="@+id/nards"
+        android:id="@+id/library"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/task5_game_choice3" />
+        android:title="@string/library" />
 
     <item
-        android:id="@+id/shogi"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/task5_game_choice4" />
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/settings" />
 
 </menu>

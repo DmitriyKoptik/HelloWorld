@@ -22,9 +22,7 @@ class Task5Activity : AppCompatActivity() {
     }
 
     private fun setUpBottomNav(navController: NavController) {
-        nav_view?.let{
-            NavigationUI.setupWithNavController(it, navController)
-        }
+        nav_view.setupWithNavController(navController)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

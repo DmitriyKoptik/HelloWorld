@@ -4,38 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Nav1">
+    tools:context="Settings">
 
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/textnav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nav1_message"
+        android:text="@string/settings_text_message"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageGame"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/chess_img"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textnav" />
-
     <Button
         android:id="@+id/textnavback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/game_end"
+        android:layout_marginTop="100dp"
+        android:text="@string/settings_goto_nav0_button_message"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageGame" />
+        app:layout_constraintTop_toBottomOf="@id/textnav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

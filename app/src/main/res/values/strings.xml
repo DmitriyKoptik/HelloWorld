@@ -21,12 +21,15 @@
     <string name="title_activity_task5">Task5Activity</string>
     <string name="task5_game_choice0">Во что сегодня играем?</string>
     <string name="task5_game_choice1">Шахматы</string>
-    <string name="task5_game_choice2">Шашки</string>
     <string name="task5_game_choice3">Нарды</string>
     <string name="task5_game_choice4">Шоги</string>
-    <string name="task5_game_choice5">Го</string>
     <string name="nav1_message">Мы играем в шахматы</string>
     <string name="nav3_message">Мы играем в нарды</string>
     <string name="nav4_message">Мы играем в шоги</string>
     <string name="game_end">Мы доиграли!</string>
+    <string name="home">Главное меню</string>
+    <string name="library">Библиотека игр</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_goto_nav0_button_message">Вернуться обратно в библиотеку игр</string>
+    <string name="settings_text_message">Настройки (пока пустые)</string>
 </resources>
