@@ -40,7 +40,7 @@ class Register : Fragment() {
 
                 findNavController().navigate(R.id.loginResult)
             } else {
-                Toast.makeText(this.getActivity(), "Проверьте, чтобы оба пароля совпадали", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this.activity, "Проверьте, чтобы оба пароля совпадали", Toast.LENGTH_SHORT).show()
             }
         }
     }

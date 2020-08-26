@@ -36,10 +36,10 @@ class Login : Fragment() {
                 if (sharedPreferences.getString("PASSWORD", "") == password){
                     findNavController().navigate(R.id.loginResult)
                 } else {
-                    Toast.makeText(this.getActivity(), "Проверьте, чтобы пароль был указан верно", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this.activity, "Проверьте, чтобы пароль был указан верно", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this.getActivity(), "Проверьте, чтобы имя пользователя было указано верно", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this.activity, "Проверьте, чтобы имя пользователя было указано верно", Toast.LENGTH_SHORT).show()
             }
         }
     }
