@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.helloworld.Task6.Login">
+    tools:context="com.example.helloworld.Task6.Register">
 
     <TextView
         android:id="@+id/textnav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="@string/registration_message"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         android:id="@+id/passwordblock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="95dp"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textSize="20sp"
@@ -39,15 +39,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/userblock" />
 
+    <EditText
+        android:id="@+id/passwordconfirmblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/password_confirm"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordblock" />
+
     <Button
-        android:id="@+id/buttonfinishLogin"
+        android:id="@+id/buttonFinishRegister"
         android:layout_width="225dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginTop="30dp"
         android:background="@color/colorAccent"
-        android:text="@string/goto_account"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/register_button"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/passwordconfirmblock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

@@ -30,7 +30,7 @@ class GameMode : Fragment() {
             .into(imageGame)
 
         textnavback.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.goto_home_action)
+            Navigation.findNavController(it).popBackStack()
         }
     }
 }

@@ -20,7 +20,7 @@ class Settings : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         textnavback.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.goto_home_action)
+            Navigation.findNavController(it).popBackStack()
         }
     }
 }

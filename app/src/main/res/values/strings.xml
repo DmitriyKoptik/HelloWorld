@@ -32,4 +32,17 @@
     <string name="settings">Настройки</string>
     <string name="settings_goto_nav0_button_message">Вернуться обратно в библиотеку игр</string>
     <string name="settings_text_message">Настройки (пока пустые)</string>
+    <string name="taskMessage6">Task6</string>
+    <string name="login">Вход в систему</string>
+    <string name="user">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="goto_account">Войти</string>
+    <string name="grettings_speech_text">Доброго дня,</string>
+    <string name="exit_account">Выйти из системы</string>
+    <string name="registration_message">Регистрация</string>
+    <string name="password_confirm">Подтвердите пароль</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="task6_first_message">Далее могут пройти только зарегистрированные пользователи</string>
+    <string name="loginButton">Войти</string>
+    <string name="registrationButton">Зарегистрироваться</string>
 </resources>

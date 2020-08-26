@@ -3,6 +3,7 @@ package com.example.helloworld
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.helloworld.Task6.Task6Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         buttonTask5.setOnClickListener() {
             val intent5 = Intent(this, Task5Activity::class.java)
             startActivityForResult(intent5, 12)
+        }
+
+        buttonTask6.setOnClickListener() {
+            val intent6 = Intent(this, Task6Activity::class.java)
+            startActivityForResult(intent6, 12)
         }
     }
 }

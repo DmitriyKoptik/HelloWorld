@@ -4,51 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.helloworld.Task6.Login">
+    tools:context="com.example.helloworld.Task6.LoginResult">
 
     <TextView
-        android:id="@+id/textnav"
+        android:id="@+id/grettings_speach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:layout_marginTop="30dp"
+        android:text="@string/grettings_speech_text"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/userblock"
+    <TextView
+        android:id="@+id/login_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:hint="@string/user"
-        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textnav" />
-
-    <EditText
-        android:id="@+id/passwordblock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userblock" />
+        app:layout_constraintTop_toBottomOf="@id/grettings_speach" />
 
     <Button
-        android:id="@+id/buttonfinishLogin"
-        android:layout_width="225dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="124dp"
-        android:background="@color/colorAccent"
-        android:text="@string/goto_account"
+        android:id="@+id/quit_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/exit_account"
+        android:background="@color/colorBox1"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/loginRegistrationScreen">
+    <fragment
+        android:id="@+id/loginRegistrationScreen"
+        android:name="com.example.helloworld.Task6.LoginRegistrationScreen"
+        android:label="fragment_login_registration"
+        tools:layout="@layout/fragment_login_registration" >
+        <action
+            android:id="@+id/goto_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/goto_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.helloworld.Task6.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.helloworld.Task6.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginResult"
+        android:name="com.example.helloworld.Task6.LoginResult"
+        android:label="fragment_login_result"
+        tools:layout="@layout/fragment_login_result" />
+</navigation>

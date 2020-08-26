@@ -18,9 +18,6 @@
         android:name="com.example.helloworld.GameMode"
         android:label="fragment_nav1"
         tools:layout="@layout/fragment_game_mode" >
-        <action
-            android:id="@+id/goto_home_action"
-            app:destination="@id/library" />
         <argument android:name="GameDetailsMode"
             app:argType="com.example.helloworld.GameDetailsMode" />
     </fragment>
@@ -28,16 +25,7 @@
         android:id="@+id/settings"
         android:name="com.example.helloworld.Settings"
         android:label="fragment_nav3"
-        tools:layout="@layout/fragment_settings" >
-        <action
-            android:id="@+id/goto_home_action"
-            app:destination="@id/library" />
-    </fragment>
-    <fragment
-        android:id="@+id/login"
-        android:name="com.example.helloworld.Login"
-        android:label="fragment_nav4"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_settings" />
     <activity
         android:id="@+id/home"
         android:name="com.example.helloworld.MainActivity"
